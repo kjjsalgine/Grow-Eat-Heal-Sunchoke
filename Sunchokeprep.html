@@ -17,14 +17,22 @@ diet.
 
 </FONT><BR><BR> </CENTER>
 
-  <CENTER>
-    <script>
-        document.getElementById("lastModifiedDate").innerHTML = document.lastModified;
-    </script>
-  
-  </CENTER>
+<script>  
+
+var currentDate = new Date(),  
+
+day = currentDate.getDate(),  
+
+ month = currentDate.getMonth() + 1,  
+
+year = currentDate.getFullYear();  
+
+ document.write("<center>"+"Last Update: " + month + "/" + day+ "/" + year)  
+
+</script>  
 
     </HTML>
+
 
 
 
